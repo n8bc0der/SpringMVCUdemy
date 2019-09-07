@@ -9,7 +9,11 @@
 
 <img src = "${pageContext.request.contextPath}/resources/images/code.png" />
 
-<a href = "showFormPage">Provide Details</a>
+<a href = "hello/showFormPage">Provide Details</a>
+
+<br>
+
+<a href = "StudentController/showForm">Student Details</a>
 
 </body>
 
