@@ -10,6 +10,11 @@
 
 The student name is : ${student.firstName} ${student.lastName}
 
+<br>
+<br>
+
+${student.firstName } ${student.lastName } is from ${student.country }
+
 </body>
 
 </html>

@@ -20,6 +20,52 @@
 		
 		<br>
 		
+		<!--|| Mapping countryList from Student class fetching values stored in constructor ||-->
+		
+		<%-- Country : <form:select path="country">
+		
+			<form:options items="${student.countryList }" />
+		
+		</form:select> --%>
+		
+		Country : <form:select path="country"> 
+     					<form:options items="${theCountryList}" />
+    			  </form:select>
+		
+		<!--|| Using spring form select field to get country values in drop-down list ||-->
+		
+		<%-- Country : <form:select path="country">
+		
+			<form:option value="Australia" label = "AUS" />
+			<form:option value="Brazil" label = "BR" />
+			<form:option value="Canada" label = "CAN" />
+			<form:option value="Denmark" label = "DEN" />
+			<form:option value="Egypt" label = "EGY" />
+			<form:option value="France" label = "FRA" />
+			<form:option value="Germany" label = "GER" />
+			<form:option value="Hong Kong" label = "HKD" />
+			<form:option value="India" label = "IND" />
+			<form:option value="Denmark" label = "JA" />
+			<form:option value="Kenya" label = "KY" />
+			<form:option value="Lithuania" label = "LT" />
+			<form:option value="Mexico" label = "MEX" />
+			<form:option value="Netherlands" label = "NL" />
+			<form:option value="Oman" label = "OMR" />
+			<form:option value="Portugal" label = "POR" />
+			<form:option value="Qatar" label = "QA" />
+			<form:option value="Russia" label = "RU" />
+			<form:option value="Spain" label = "ESP" />
+			<form:option value="Turkey" label = "TR" />
+			<form:option value="United Kingdom" label = "UK" />
+			<form:option value="Venezuela" label = "VZA" />
+			<form:option value="Wales" label = "WAL" />
+			<form:option value="emen" label = "YE" />
+			<form:option value="Zimbabwe" label = "ZIM" />
+		
+		</form:select> --%>
+		
+		<br>
+		
 		<input type = "submit" value = "Submit">
 		
 		
