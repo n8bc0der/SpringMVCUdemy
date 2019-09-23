@@ -17,6 +17,10 @@ ${student.firstName } ${student.lastName } is from ${student.country }
 
 <br>
 
+<%-- ${student.firstName } ${student.lastName }'s favorite language is ${student.favoriteLanguage } --%>
+
+<br>
+
 ${student.firstName } ${student.lastName }'s favorite language is ${student.favoriteLanguage }
 
 </body>

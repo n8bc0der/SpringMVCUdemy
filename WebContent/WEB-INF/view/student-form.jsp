@@ -66,15 +66,21 @@
 		
 		<br>
 		
-		Favorite Language : 
+		<%-- Favorite Language : 
 		
 		Java<form:radiobutton path="favoriteLanguage" value="Java"/>
 		C#<form:radiobutton path="favoriteLanguage" value="C#"/>
 		PHP<form:radiobutton path="favoriteLanguage" value="PHP"/>
-		<%-- <%= getSpaces(20)%> --%>
+		
+		<%= getSpaces(20)%>
+		
 		Ruby<form:radiobutton path="favoriteLanguage" value="Ruby" />
 		Javascript<form:radiobutton path="favoriteLanguage" value="Javascript"/>
-		Angular<form:radiobutton path="favoriteLanguage" value="Angular"/>
+		Angular<form:radiobutton path="favoriteLanguage" value="Angular"/> --%>
+		
+		
+		
+		Favorite Language : <form:radiobuttons path="favoriteLanguage" items = "${student.languageList }"/>
 		
 		<br>
 		

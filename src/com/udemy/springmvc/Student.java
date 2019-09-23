@@ -11,7 +11,23 @@ public class Student {
 	
 	private String favoriteLanguage;
 	
-//	Adding Country using LinkedHashMap key/value pair in Java code 
+	private LinkedHashMap<String, String> languageList;
+	
+	public Student() {
+		
+		languageList = new LinkedHashMap<String,String>();
+		
+		languageList.put("Java","Java");
+		languageList.put("Javascript","Javascript");
+		languageList.put("Angular","Angular");
+		languageList.put("C#","C#");
+		languageList.put("Ruby","Ruby");
+		languageList.put("PHP","PHP");
+	}
+	
+//******Adding Country using LinkedHashMap key/value pair in Java code******//
+
+
 	
 //	private LinkedHashMap<String, String> countryList;
 	
@@ -46,7 +62,9 @@ public class Student {
 //		countryList.put("ZIM", "Zimbabwe");
 //		
 //	}
-	
+
+
+//****** Student Constructor for countryList ends here******//
 	
 	/**
 	 * @return the firstName
@@ -72,6 +90,9 @@ public class Student {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+
+//******Using the form:select tag for checkbox******//
+	
 	/**
 	 * @return the country
 	 */
@@ -84,6 +105,14 @@ public class Student {
 	public void setCountry(String country) {
 		this.country = country;
 	}
+	
+//******country methods for form tags ends here******//	
+
+
+	
+
+//******Using the form:radiobutton tag for Radio Button******//
+	
 	/**
 	 * @return the favoriteLanguage
 	 */
@@ -98,7 +127,26 @@ public class Student {
 	}
 	
 	
+//******language methods for form tags ends here******//	
 
+
+
+	
+//******Using the form:radiobuttons tag for populating Radio Button from Java class******//
+	
+	/**
+	 * @return the languageList
+	 */
+	public LinkedHashMap<String, String> getLanguageList() {
+		return languageList;
+	}
+	
+//******languageList methods for form tags (Java class) ends here******//
+	
+
+	
+	
+//******Using the form:options tag for populating Check-box from Java class******//
 
 	/**
 	 * @return the countryList
@@ -107,6 +155,6 @@ public class Student {
 //		return countryList;
 //	}
 	
-	
+//******countryList methods for form tags (Java class) ends here******//	
 
 }
