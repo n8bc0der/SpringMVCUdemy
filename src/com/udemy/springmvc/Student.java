@@ -9,6 +9,8 @@ public class Student {
 	
 	private String country;
 	
+	private String favoriteLanguage;
+	
 //	Adding Country using LinkedHashMap key/value pair in Java code 
 	
 //	private LinkedHashMap<String, String> countryList;
@@ -82,6 +84,20 @@ public class Student {
 	public void setCountry(String country) {
 		this.country = country;
 	}
+	/**
+	 * @return the favoriteLanguage
+	 */
+	public String getFavoriteLanguage() {
+		return favoriteLanguage;
+	}
+	/**
+	 * @param favoriteLanguage the favoriteLanguage to set
+	 */
+	public void setFavoriteLanguage(String favoriteLanguage) {
+		this.favoriteLanguage = favoriteLanguage;
+	}
+	
+	
 
 
 	/**

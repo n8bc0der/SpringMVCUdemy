@@ -66,8 +66,32 @@
 		
 		<br>
 		
+		Favorite Language : 
+		
+		Java<form:radiobutton path="favoriteLanguage" value="Java"/>
+		C#<form:radiobutton path="favoriteLanguage" value="C#"/>
+		PHP<form:radiobutton path="favoriteLanguage" value="PHP"/>
+		<%-- <%= getSpaces(20)%> --%>
+		Ruby<form:radiobutton path="favoriteLanguage" value="Ruby" />
+		Javascript<form:radiobutton path="favoriteLanguage" value="Javascript"/>
+		Angular<form:radiobutton path="favoriteLanguage" value="Angular"/>
+		
+		<br>
+		
 		<input type = "submit" value = "Submit">
 		
+		
+<!-- Tried to add multiple spaces and line break for Buttons but not successful currently -->		
+		
+<%-- 		<%!
+			public String getSpaces(int numSpaces)
+				{
+  					StringBuffer buffer = new StringBuffer(numSpaces);
+  					for(int i = 0; i < numSpaces; i++)
+    					buffer.append(" ");
+  					return buffer.toString();
+				}
+		%> --%>
 		
 		</form:form>
 
