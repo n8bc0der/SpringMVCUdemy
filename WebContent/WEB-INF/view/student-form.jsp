@@ -14,11 +14,11 @@
 		
 		First Name : <form:input path="firstName"/>
 		
-		<br>
+		<br><br>
 		
 		Last Name : <form:input path="lastName"/>
 		
-		<br>
+		<br><br>
 		
 		<!--|| Mapping countryList from Student class fetching values stored in constructor ||-->
 		
@@ -64,9 +64,9 @@
 		
 		</form:select> --%>
 		
-		<br>
+		<br><br>
 		
-		<%-- Favorite Language : 
+		 <%-- Favorite Language : 
 		
 		Java<form:radiobutton path="favoriteLanguage" value="Java"/>
 		C#<form:radiobutton path="favoriteLanguage" value="C#"/>
@@ -76,29 +76,33 @@
 		
 		Ruby<form:radiobutton path="favoriteLanguage" value="Ruby" />
 		Javascript<form:radiobutton path="favoriteLanguage" value="Javascript"/>
-		Angular<form:radiobutton path="favoriteLanguage" value="Angular"/> --%>
-		
+		Angular<form:radiobutton path="favoriteLanguage" value="Angular"/>
+		 --%>
 		
 		
 		Favorite Language : <form:radiobuttons path="favoriteLanguage" items = "${student.languageList }"/>
 		
-		<br>
+		<br><br>
 		
-		Operating System : 
+		<%-- Operating System : 
 		
 		Windows<form:checkbox path="operatingSystems" value = "Windows"/>
 		Mac OS<form:checkbox path="operatingSystems" value = "Mac OS"/>
 		Linux<form:checkbox path="operatingSystems" value = "Linux"/>
 		Ubuntu<form:checkbox path="operatingSystems" value = "Ubuntu"/>
 		
-		<br>
+		<br> --%>
+		
+		OS : <form:checkboxes items="${student.OSList }" path="operatingSystems"/>
+		
+		<br><br>
 		
 		<input type = "submit" value = "Submit">
 		
 		
 <!-- Tried to add multiple spaces and line break for Buttons but not successful currently -->		
 		
-<%-- 		<%!
+ 		<%-- <%!
 			public String getSpaces(int numSpaces)
 				{
   					StringBuffer buffer = new StringBuffer(numSpaces);

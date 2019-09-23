@@ -24,9 +24,21 @@ ${student.firstName } ${student.lastName } is from ${student.country }
 
 ${student.firstName } ${student.lastName }'s favorite language is ${student.favoriteLanguage }
 
-<br>
+<br><br>
 
-${student.firstName } ${student.lastName }'s have operated
+<%-- ${student.firstName } ${student.lastName }'s have operated
+<ul>
+
+	<c:forEach var = "temp" items="${student.operatingSystems }">
+		
+		<li>${temp}</li>
+	
+	</c:forEach>
+
+</ul> --%>
+ 
+
+${student.firstName } ${student.lastName } have operated on following OS :
 <ul>
 
 	<c:forEach var = "temp" items="${student.operatingSystems }">
@@ -36,7 +48,7 @@ ${student.firstName } ${student.lastName }'s have operated
 	</c:forEach>
 
 </ul>
- 
+
 
 </body>
 

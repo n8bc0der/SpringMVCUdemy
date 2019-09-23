@@ -15,6 +15,8 @@ public class Student {
 	
 	private String[] operatingSystems;
 	
+	private LinkedHashMap<String,String> OSList;
+	
 	public Student() {
 		
 		languageList = new LinkedHashMap<String,String>();
@@ -25,6 +27,13 @@ public class Student {
 		languageList.put("C#","C#");
 		languageList.put("Ruby","Ruby");
 		languageList.put("PHP","PHP");
+		
+		OSList = new LinkedHashMap<>();
+		
+		OSList.put("Linux", "Linux");
+		OSList.put("Mac OS", "Mac OS");
+		OSList.put("Ubuntu", "Ubuntu");
+		OSList.put("Windows", "Windows");
 	}
 	
 //******Adding Country using LinkedHashMap key/value pair in Java code******//
@@ -66,7 +75,7 @@ public class Student {
 //	}
 
 
-//****** Student Constructor for countryList ends here******//
+
 	
 	/**
 	 * @return the firstName
@@ -106,9 +115,7 @@ public class Student {
 	 */
 	public void setCountry(String country) {
 		this.country = country;
-	}
-	
-//******country methods for form tags ends here******//	
+	}	
 
 
 	
@@ -126,10 +133,7 @@ public class Student {
 	 */
 	public void setFavoriteLanguage(String favoriteLanguage) {
 		this.favoriteLanguage = favoriteLanguage;
-	}
-	
-	
-//******language methods for form tags ends here******//	
+	}	
 
 
 
@@ -142,9 +146,11 @@ public class Student {
 	public LinkedHashMap<String, String> getLanguageList() {
 		return languageList;
 	}
+	
 
 	
-	
+
+//******Using the form:checkbox tag for check box******//	
 	
 	/**
 	 * @return the operatingSystems
@@ -158,9 +164,19 @@ public class Student {
 	 */
 	public void setOperatingSystems(String[] operatingSystems) {
 		this.operatingSystems = operatingSystems;
-	}
+	}	
+
 	
-//******languageList methods for form tags (Java class) ends here******//
+	
+	
+//******Using the form:checkboxes tag for populating check-box from Java class******//	
+	
+	/**
+	 * @return the oSList
+	 */
+	public LinkedHashMap<String, String> getOSList() {
+		return OSList;
+	}
 	
 
 	
@@ -172,8 +188,6 @@ public class Student {
 	 */
 //	public LinkedHashMap<String, String> getCountryList() {
 //		return countryList;
-//	}
-	
-//******countryList methods for form tags (Java class) ends here******//	
+//	}	
 
 }
