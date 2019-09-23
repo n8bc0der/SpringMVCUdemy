@@ -13,6 +13,8 @@ public class Student {
 	
 	private LinkedHashMap<String, String> languageList;
 	
+	private String[] operatingSystems;
+	
 	public Student() {
 		
 		languageList = new LinkedHashMap<String,String>();
@@ -91,7 +93,7 @@ public class Student {
 		this.lastName = lastName;
 	}
 
-//******Using the form:select tag for checkbox******//
+//******Using the form:select tag for dropdown******//
 	
 	/**
 	 * @return the country
@@ -140,13 +142,30 @@ public class Student {
 	public LinkedHashMap<String, String> getLanguageList() {
 		return languageList;
 	}
+
+	
+	
+	
+	/**
+	 * @return the operatingSystems
+	 */
+	public String[] getOperatingSystems() {
+		return operatingSystems;
+	}
+
+	/**
+	 * @param operatingSystems the operatingSystems to set
+	 */
+	public void setOperatingSystems(String[] operatingSystems) {
+		this.operatingSystems = operatingSystems;
+	}
 	
 //******languageList methods for form tags (Java class) ends here******//
 	
 
 	
 	
-//******Using the form:options tag for populating Check-box from Java class******//
+//******Using the form:options tag for populating Dropdown from Java class******//
 
 	/**
 	 * @return the countryList
